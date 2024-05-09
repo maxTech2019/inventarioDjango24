@@ -14,5 +14,4 @@ def agregar_producto(request):
         cantidad = request.POST.get('cantidad')
         producto_nuevo = Producto(nombre=nombre, precio=precio, cantidad=cantidad)
         producto_nuevo.save()
-        return redirect('rlistar_productos')
-    return render(request, 'agregar_productos.html')
+        return.redirect()

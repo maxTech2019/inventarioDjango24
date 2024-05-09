@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Listar Productos.
+{% endblock title %}
+
+{% block content %}
+    <h1>Listado de Productos</h1>
+    <ul class='list-group'>
+        {% for producto in productos %}
+            <li class='list-groups-item'>
+                 {{producto.nombre}} - {{producto.precio}}  -  producto.cantidad}}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock content %}

@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .models import Producto
 
 # Create your views here.
@@ -12,7 +12,4 @@ def agregar_producto(request):
         nombre = request.POST.get('nombre')
         precio = request.POST.get('precio')
         cantidad = request.POST.get('cantidad')
-        producto_nuevo = Producto(nombre=nombre, precio=precio, cantidad=cantidad)
-        producto_nuevo.save()
-        return redirect('rlistar_productos')
-    return render(request, 'agregar_productos.html')
+        producto_nuevo = Producto(nombre=nombre)
