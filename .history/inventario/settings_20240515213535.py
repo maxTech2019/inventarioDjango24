@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'drf_yasg',
     'rest_framework',
     'productos',
 ]
@@ -53,8 +52,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'inventario.urls'
-
-SWAGGER_SETTINGS = { "DEFAULT_GENERATOR_CLASS": "rest_framework.schemas.generators.BaseSchemaGenerator", }
 
 TEMPLATES = [
     {

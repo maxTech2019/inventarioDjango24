@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'rest_framework',
     'productos',
+    'productos',
 ]
 
 MIDDLEWARE = [
@@ -53,8 +54,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'inventario.urls'
-
-SWAGGER_SETTINGS = { "DEFAULT_GENERATOR_CLASS": "rest_framework.schemas.generators.BaseSchemaGenerator", }
 
 TEMPLATES = [
     {

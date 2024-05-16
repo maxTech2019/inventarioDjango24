@@ -48,7 +48,7 @@ def eliminar_producto(request):
             producto.delete()
         except Producto.DoesNotExist:
             pass
-        return redirect('listar_productos')
+        return redirect('productos:listar_productos')
     return render(request, "eliminar.html")
 
 def buscar_producto(request):
